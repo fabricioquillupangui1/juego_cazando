@@ -7,8 +7,7 @@ const ANCHO_COMIDA = 20;
 let gatoX = 0;
 let gatoY = 0;
 let comidaX = 0;
-let comidaY = 0;
-    
+let comidaY = 0; 
 function graficarGato() {
     graficarRectangulo(gatoX, gatoY, ANCHO_GATO, ALTURA_GATO, "#300");
 }
@@ -54,8 +53,20 @@ function moverAbajo(){
     actualizarPantalla();
 }
 
+function detectarColision (){
+    if(gatoX + ANCHO_GATO>comidaX && 
+        gatoX<comidaX + ANCHO_COMIDA &&
+        gatoY + ALTURA_GATO>comidaY && 
+        gatoY<comidaY + ALTO_COMIDA
+    ){
+    alert("ATRAPADO!!");
+    }
+}
+
 function actualizarPantalla(){
     limpiarCanva();
     graficarGato();
     graficarComida();
+    detectarColision();
 }
+
