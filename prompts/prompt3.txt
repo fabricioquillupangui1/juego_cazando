@@ -1,0 +1,6 @@
+Prompt 3 (Integración de Imagen de Control junto a Arcade Edition):
+"Actúa como un profesional en diseño gráfico. Modifica la interfaz web para incorporar la imagen del control de videojuegos ('control-arcade.png') justo al lado del texto 'ARCADE EDITION' dentro de la cabecera. Asegúrate de conservar intactos todos los IDs obligatorios de la aplicación (#areaJuego, #puntos, #tiempo, #mensaje) en el archivo index.html, y limita estrictamente los cambios a los archivos HTML y CSS, sin tocar ningún aspecto del código JavaScript."
+
+Historial de solicitudes adicionales aplicadas:
+- Se ajustaron las propiedades CSS (.header-badge-top y .badge-img) para alinear en línea la imagen en miniatura con bordes redondeados y efecto de brillo acorde a la temática arcade.
+- Verificación del correcto funcionamiento visual y cumplimiento de restricciones técnicas.
