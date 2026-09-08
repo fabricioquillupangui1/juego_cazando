@@ -95,3 +95,12 @@ function actualizarPantalla(){
     detectarColision();
 }
 
+function reiniciar(){
+puntaje=0;
+tiempo=10;
+
+mostrarEnSpan("puntos", puntaje);
+mostrarEnSpan("tiempo", tiempo);
+
+iniciarJuego();
+}
