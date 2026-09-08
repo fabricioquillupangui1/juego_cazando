@@ -5,41 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juego Cazando</title>
   <link rel="stylesheet" href="cazando.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
   <script src="utils.js"></script>
 </head>
 <body onload="iniciarJuego()">
 
-  <div class="game-container">
-    <header class="game-header">
-      <h1>Juego Cazando</h1>
-      <p class="author">Autor: Fabricio Quillupangui</p>
-    </header>
+  <div class="game-wrapper">
+    <div class="game-container">
+      
+      <header class="game-header">
+        <div class="header-badge-top">🎮 Arcade Edition</div>
+        <h1>Juego Cazando</h1>
+        <p class="author">Autor: Fabricio Quillupangui</p>
+      </header>
 
-    <div class="canvas-wrapper">
-      <canvas id="areaJuego" width="500" height="500"></canvas>
-    </div>
-
-    <div class="panel">
-      <div class="badge">Puntos: <span id="puntos">0</span></div>
-      <div class="badge">Tiempo: <span id="tiempo">10</span>s</div>
-    </div>
-
-    <div class="controles">
-      <div class="control-row">
-        <button onclick="moverArriba()" class="btn-control">⬆</button>
+      <div class="canvas-wrapper">
+        <div class="canvas-glow-effect"></div>
+        <canvas id="areaJuego" width="300" height="300"></canvas>
       </div>
-      <div class="control-row">
-        <button onclick="moverIzquierda()" class="btn-control">⬅</button>
-        <button onclick="moverAbajo()" class="btn-control">⬇</button>
-        <button onclick="moverDerecha()" class="btn-control">➡</button>
-      </div>
-      <div class="control-row">
-        <button onclick="reiniciar()" class="btn-action">Reiniciar</button>
-      </div>
-    </div>
 
-    <p id="mensaje"></p>
+      <div class="panel">
+        <div class="badge score-badge">
+          <span class="badge-icon">⭐</span> Puntos: <span id="puntos">0</span>
+        </div>
+        <div class="badge time-badge">
+          <span class="badge-icon">⏳</span> Tiempo: <span id="tiempo">10</span>s
+        </div>
+      </div>
+
+      <div class="controles">
+        <div class="control-row">
+          <button onclick="moverArriba()" class="btn-control" aria-label="Arriba">▲</button>
+        </div>
+        <div class="control-row horizontal-controls">
+          <button onclick="moverIzquierda()" class="btn-control" aria-label="Izquierda">◀</button>
+          <button onclick="moverAbajo()" class="btn-control" aria-label="Abajo">▼</button>
+          <button onclick="moverDerecha()" class="btn-control" aria-label="Derecha">▶</button>
+        </div>
+        <div class="control-row action-row">
+          <button onclick="reiniciar()" class="btn-action">Reiniciar Partida</button>
+        </div>
+      </div>
+
+      <div class="message-container">
+        <p id="mensaje"></p>
+      </div>
+
+    </div>
   </div>
 
   <script src="cazando.js"></script>

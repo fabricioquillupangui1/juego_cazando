@@ -1,0 +1,8 @@
+Prompt 1 (Mejora Gráfica):
+"Actúa como un profesional en diseño gráfico. Necesito que conserves los IDs obligatorios del archivo index.html (#areaJuego, #puntos, #tiempo, #mensaje), mejora los gráficos aplicando un estilo moderno tipo Arcade Glassmorphism usando CSS avanzado, con tipografía 'Outfit', gradientes suaves, contenedores y botones interactivos mejorados. No modifiques la lógica ni ninguna función de JavaScript."
+
+Solicitud de validación y restricciones aplicadas:
+- Verificación estricta de IDs en index.html intactos.
+- Se restringieron los cambios únicamente a index.html y cazando.css.
+- Se omitió cualquier alteración en el archivo cazando.js para prevenir errores de ejecución.
+
