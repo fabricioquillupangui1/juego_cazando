@@ -6,3 +6,6 @@ Solicitud de validación y restricciones aplicadas:
 - Se restringieron los cambios únicamente a index.html y cazando.css.
 - Se omitió cualquier alteración en el archivo cazando.js para prevenir errores de ejecución.
 
+Prompt 2
+
+Quiero que realices un nuevo cambio visual donde mas adelante ya añadiremos imágenes 

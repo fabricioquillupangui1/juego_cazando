@@ -1,0 +1,6 @@
+Prompt 2 (Integración de Imágenes y Fondo Background):
+"Actúa como un profesional en diseño gráfico. Agrega imágenes y recursos visuales al proyecto, incorporando un fondo (background) temático de alta calidad obtenido de internet para la interfaz general del juego 'Cazando'. Mantén obligatoriamente todos los IDs originales intactos (#areaJuego, #puntos, #tiempo, #mensaje) en el archivo index.html y asegúrate de modificar únicamente HTML y CSS, sin alterar ninguna línea ni función del archivo JavaScript existente."
+
+Historial de solicitudes adicionales aplicadas:
+- Selección e integración mediante CSS de un recurso visual de fondo temático ("background-image") con overlay oscuro para mantener la legibilidad y contraste UI/UX.
+- Verificación exhaustiva de compatibilidad de los elementos visuales añadidos con los IDs de control originales requeridos por el script.
